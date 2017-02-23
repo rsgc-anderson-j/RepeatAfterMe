@@ -32,23 +32,22 @@ let canvas = Canvas(width: 360, height: 360)
 //
 //}
 
+for x in stride(from: 0, through: 100, by: 10) {
+    canvas.drawEllipse(centreX: 180, centreY: 180, width: 2, height: 2, borderWidth: 1)
+  
+}
+
 for x in stride(from: 10, through: 100, by: 10) {
  
     canvas.drawShapesWithBorders = true
     canvas.drawShapesWithFill = false
     canvas.borderColor = Color.black
     canvas.drawEllipse(centreX: 50, centreY: 310, width: x, height: x, borderWidth: 1)
-}
-
-canvas.fillColor = Color.white
-for x in stride(from: 0, through: 100, by: 10) {
     
     canvas.drawRectangle(bottomLeftX: 260 + x, bottomLeftY: 0, width: 100 - x, height: 100 - x, borderWidth: 1)
 }
 
-//// draw squares in bottom right
-//canvas.fillColor = Color.white
-//canvas.drawRectangle(bottomLeftX: 350, bottomLeftY: 0, width: 10, height: 10, borderWidth: 2)
+
 // Modify code above as needed and continue writing code below as needed...
 
 
